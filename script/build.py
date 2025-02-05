@@ -87,7 +87,7 @@ def main():
   elif 'windows' == target:
     args += [
       # 'skia_use_direct3d=true',
-      'clang_win="C:\\Program Files\\LLVM"',
+      # 'clang_win="C:\\Program Files\\LLVM"',
       'extra_cflags=["-DSK_FONT_HOST_USE_SYSTEM_SETTINGS"]',
     ]
   elif 'android' == target:
