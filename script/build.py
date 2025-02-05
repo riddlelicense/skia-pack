@@ -38,7 +38,10 @@ def main():
     'skia_use_system_icu=false',
     'skia_enable_ganesh=false',
     'skia_enable_graphite=true',
-    'skia_use_dawn=true'
+    'skia_use_dawn=true',
+    'cc="clang"',
+    'cxx="clang++',
+    'clang_win="C:\Program Files\LLVM"'
   ]
 
   if isMacos or isIos or isTvos:
