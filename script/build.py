@@ -40,8 +40,7 @@ def main():
     'skia_enable_graphite=true',
     'skia_use_dawn=true',
     'cc="clang"',
-    'cxx="clang++',
-    'clang_win="C:\Program Files\LLVM"'
+    'cxx="clang++'
   ]
 
   if isMacos or isIos or isTvos:
@@ -87,7 +86,8 @@ def main():
         ]
   elif 'windows' == target:
     args += [
-      'skia_use_direct3d=true',
+      # 'skia_use_direct3d=true',
+      'clang_win="C:/Program Files/LLVM"',
       'extra_cflags=["-DSK_FONT_HOST_USE_SYSTEM_SETTINGS"]',
     ]
   elif 'android' == target:
