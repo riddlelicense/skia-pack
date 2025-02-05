@@ -35,9 +35,10 @@ def main():
     'skia_use_sfntly=false',
     'skia_use_system_freetype2=false',
     'skia_use_system_harfbuzz=false',
-    'skia_pdf_subset_harfbuzz=true',
     'skia_use_system_icu=false',
-    'skia_enable_skottie=true'
+    'skia_enable_ganesh=false',
+    'skia_enable_graphite=true',
+    'skia_use_dawn=true'
   ]
 
   if isMacos or isIos or isTvos:
